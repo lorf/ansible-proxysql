@@ -7,7 +7,7 @@ proxysql_download_url: https://github.com/sysown/proxysql/releases/download
 # Name of the ProxySQL package
 # Type: List
 proxysql_pkgs:
-  - proxysql
+  - proxysql2
 
 # The following keys should be ignored in `proxysql.cnf`
 # Type: List
