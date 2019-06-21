@@ -9,7 +9,7 @@ proxysql_pkg: "proxysql-{{ proxysql_version }}-1-{{ proxysql_distribution }}{{ p
 proxysql_pkg_url: "{{ proxysql_download_url }}/v{{ proxysql_version }}/{{ proxysql_pkg }}"
 
 # Type: List
-proxysql_dependency_pkgs:
+default_proxysql_dependency_pkgs:
   - MySQL-python
   - mysql
 

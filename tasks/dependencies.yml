@@ -1,5 +1,10 @@
 ---
 
+- name: Set proxysql_dependency_pkgs
+  set_fact:
+    proxysql_dependency_pkgs: "{{ default_proxysql_dependency_pkgs }}"
+  when: proxysql_dependency_pkgs is not defined
+
 - name: Install dependency packages
   package:
     name: "{{ proxysql_dependency_pkgs }}"
